@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Student from './pages/Student';
@@ -7,7 +7,7 @@ import './index.css';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <main>
         <Routes>
@@ -21,6 +21,6 @@ export default function App() {
       <footer className="site-footer">
         <p>EduPulse – Educational Technology Project &nbsp;|&nbsp; Khoa học Dữ liệu và Ứng dụng trong Giáo dục</p>
       </footer>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
